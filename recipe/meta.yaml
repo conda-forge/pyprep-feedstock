@@ -1,5 +1,5 @@
 {% set name = "pyprep" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyprep-{{ version }}.tar.gz
-  sha256: 434698851717baf2cc7c2f692e521465f00f434aff976ed1bc9c31204e6e2b2b
+  sha256: 965a4aadcc65e66ea8bd6b43305828b0f30f47d34aca66075dd9d48a407e41ae
 
 build:
   number: 0
@@ -18,14 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - mne >=0.20.0
+    - python >=3.7
     - numpy >=1.14.1
-    - psutil >=5.4.3
-    - python >=3.6
     - scipy >=1.0.0
-    - statsmodels >=0.8.0
+    - mne >=0.20.0
+    - psutil >=5.4.3
 
 test:
   imports:
@@ -45,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - sappelhoff
+    - a-hurst
