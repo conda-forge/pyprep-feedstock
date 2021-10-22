@@ -118,4 +118,5 @@ Feedstock Maintainers
 =====================
 
 * [@sappelhoff](https://github.com/sappelhoff/)
+* [@a-hurst](https://github.com/a-hurst/)
 
