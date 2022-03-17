@@ -1,5 +1,5 @@
 {% set name = "pyprep" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyprep-{{ version }}.tar.gz
-  sha256: 2611b00052693ed6c6d6869585b041b51df8c60ba68ee0ab37dc878de76bb11b
+  sha256: 1814d4a135c273f5dd03bfeeab2bb5ad92954fdd610e4246b7c2cabc08081c0a
 
 build:
   number: 0
