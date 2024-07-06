@@ -11,7 +11,7 @@ source:
   sha256: 4e7713f214bdcbb23f1c1f1eb20602e13731961bd33d1b5fc78a1c38d02fbac0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,7 +23,7 @@ requirements:
     - python >=3.8
     - numpy >=1.20.2
     - scipy >=1.6.3
-    - mne >=1.3.0
+    - mne-base >=1.3.0
     - psutil >=5.4.3
 
 test:
