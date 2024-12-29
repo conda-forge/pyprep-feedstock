@@ -19,6 +19,8 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - hatchling
+    - hatch-vcs    
   run:
     - python >={{ python_min }}
     - numpy >=1.20.2
