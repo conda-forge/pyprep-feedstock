@@ -1,5 +1,5 @@
 {% set name = "pyprep" %}
-{% set version = "0.4.3" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyprep-{{ version }}.tar.gz
-  sha256: 4e7713f214bdcbb23f1c1f1eb20602e13731961bd33d1b5fc78a1c38d02fbac0
+  sha256: 6df407b127acfef26ea1d3b768d6cebbcdd469b2bbb7ca66dec5c6ac517b89ed
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,7 +20,7 @@ requirements:
     - pip
     - python {{ python_min }}
     - hatchling
-    - hatch-vcs    
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - numpy >=1.20.2
